@@ -3,7 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Gemini"
              StartupUri="MainWindow.xaml">
-    <Application.Resources>
+        <Application.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="ContextMenu">
+                <Setter.Value>
+                    <ContextMenu>
+                        <MenuItem Header="Couper" Command="ApplicationCommands.Cut" />
+                        <MenuItem Header="Copier" Command="ApplicationCommands.Copy" />
+                        <MenuItem Header="Coller" Command="ApplicationCommands.Paste" />
+                    </ContextMenu>
+                </Setter.Value>
+            </Setter>
+        </Style>
          
     </Application.Resources>
 </Application>
+
