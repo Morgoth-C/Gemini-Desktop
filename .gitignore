@@ -1,0 +1,21 @@
+﻿# --- SÉCURITÉ & DONNÉES PRIVÉES (Cookies, WebView2, Profils) ---
+Data/
+**/Data/
+**/Profile/
+**/profile_data/
+Publish/
+**/Publish/
+**/EBWebView/
+
+# --- DOSSIERS DE COMPILATION ---
+bin/
+obj/
+Gemini/
+*.exe
+*.dll
+
+# --- TEMPORAIRES ---
+.vs/
+.vscode/
+*.user
+*.suo
